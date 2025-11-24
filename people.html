@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>People | CTU-CAVES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Shared stylesheet used by ALL pages (index, people, research, etc.) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================== SITE HEADER + NAV BAR ==================
+     - Logo text is "CTU-CAVES"
+     - Links to the other HTML pages that also use css/style.css
+     - The "People" link is highlighted via class="active"
+============================================================== -->
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo"><span>CTU-CAVES</span></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="people.html" class="active">People</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="sponsors.html">Sponsors</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================== MAIN PEOPLE SECTION ================== -->
+<section class="section">
+  <div class="container">
+    <h1>People</h1>
+
+    <!-- ======= DIRECTOR BLOCK =======
+         - Left: director photo from img/director.jpg
+         - Right: text info + accordion with Biography and Links
+         - Layout and styles controlled by:
+             .person-detail, .person-photo, .person-info (in style.css)
+    ================================== -->
+    <h2>Director</h2>
+
+    <div class="person-detail">
+      <!-- PHOTO LEFT (change director.jpg to your actual file name) -->
+      <div class="person-photo">
+        <img src="img/people/director.jpg" alt="Director photo">
+      </div>
+
+      <!-- INFO + ACCORDION RIGHT -->
+      <div class="person-info">
+        <h3>Jonathan Maglasang, Ph.D.</h3>
+        <p class="person-title">Professor, Department of Mechanical and Aerospace Engineering</p>
+
+        <p><strong>Email:</strong> <a href="mailto:jonathan.maglasang@ctu.edu.ph">jonathan.maglasang@ctu.edu.ph</a></p>
+        <p><strong>Phone:</strong> (+63) 917-719-7694</p>
+        <p><strong>Office:</strong> ENG 401, New Academic Bldg, Cebu Technological University - Main Campus</p>
+
+        <!-- ======= ACCORDION / DROPDOWNS =======
+             - Behavior controlled by the JS at the bottom of this file
+             - Visual style: .accordion, .accordion-item, .accordion-header, .accordion-panel
+        ========================================= -->
+        <div class="accordion">
+          <!-- Biography panel -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Biography
+            </button>
+            <div class="accordion-panel">
+              <p>
+                Dr. Jonathan Maglasang is a Professor of Mechanical and Aerospace Engineering and a University Director 
+                at Cebu Technological University (CTU). He is the coordinator for the BS Aerospace Engineering (BSASE) 
+                program and the director of the Center for Advanced Vehicles and Energy Systems. He is also engaged in 
+                promoting CTU as a national and international research collaborating hub in Central Philippines.<br>
+                Dr. Jonathan Maglasang has advised and mentored several undergraduates, master’s, and doctoral students 
+                in their research work. He obtained his MS and Ph.D. in Aeronautics & Astronautics (Aerospace Engineering) 
+                from Kyushu University and his BS in Mechanical Engineering degree from MSU-IIT.<br>
+                His research and development interests include performance enhancements of renewable energy systems, wind, 
+                gas, and hydraulic turbines; aerial, terrain, and underwater robotics; flapping, rotary, and fixed-wing 
+                unmanned aerial vehicles (UAVs); wing-in-surface effect (WISE) vehicles for rapid and efficient inter-island 
+                transportation; hybrid rocket propulsion systems; indigenous rocket propulsion; biomimetics; and applied 
+                aeronautics and astronautics. He has R&D projects funded by the Department of Science and Technology (DOST).<br>
+                He loves fishing, farming, 3D printing, mental/thought experiments, and unconventional designing. He establishes 
+                his Design, Research, Engineering, Analysis, and Manufacturing (DREAM) Laboratory at home with his kids as 
+                his research assistants and lab rats. He is a silent type, and if he is not reading or talking, he is probably 
+                running some iterative mental calculations and experiments. And most of all, he is of God and family.
+              </p>
+            </div>
+          </div>
+
+          <!-- Links panel (ICON-ONLY LINKS) -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Links
+            </button>
+            <div class="accordion-panel">
+
+              <!-- 
+                ICON LINKS:
+                - Uses small SVG icons from: img/icons/scholar.svg, linkedin.svg, orcid.svg
+                - Size and spacing controlled by .staff-links and .icon-img in style.css
+              -->
+              <div class="staff-links">
+                <a href="https://scholar.google.com/citations?user=v0tVqX0AAAAJ&hl=en&authuser=4&oi=ao" target="_blank">
+                  <img src="img/icons/scholar.svg" class="icon-img" alt="Google Scholar">
+                </a>
+                <a href="https://www.linkedin.com/in/jonathan-maglasang" target="_blank">
+                  <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+                </a>
+                <a href="https://orcid.org/0000-0001-9761-6968" target="_blank">
+                  <img src="img/icons/orcid.svg" class="icon-img" alt="ORCID">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div> <!-- end .accordion -->
+      </div> <!-- end .person-info -->
+    </div> <!-- end .person-detail -->
+
+    <br><br>
+
+    <!-- ======= HMAV Research Staffs =======
+         - Each staff entry:
+           * photo from img/staff1.jpg (or other file names later)
+           * text block with education + research interests
+           * icon links (Scholar / LinkedIn / ORCID)
+         - Layout controlled by: .people-grid.staff-list, .person-card, .staff-card, .staff-photo, .staff-info
+    ======================================== -->
+    <h2>HMAV Research Staffs</h2>
+    <div class="people-grid staff-list">
+
+      <div class="person-card staff-card">
+        <!-- staff photo -->
+        <img src="img/people/anne.jpg" alt="Anne Jealyn Rodrigo" class="staff-photo">
+        <!-- staff text -->
+        <div class="staff-info">
+          <h3>Anne Jealyn Rodrigo</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Mechanical Engineering, Cebu Technological University</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>Autonomous Systems, Renewable Energy, Offshore Structures, Nanosatellite</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:annejealyn.rodrigo@ctu.edu.ph">annejealyn.rodrigo@ctu.edu.ph</a></p>
+          <!-- social icons -->
+          <div class="staff-links">
+            <a href="https://www.linkedin.com/in/anne-rodrigo-335275284/" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/hexon.jpg" alt="Hexon Soriano" class="staff-photo">
+        <div class="staff-info">
+          <h3>Hexon Soriano</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Mechanical Engineering, Mindanao State University - Iligan Institute of Technology</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>edi sa puso mo</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:hexon.soriano@ctu.edu.ph">hexon.soriano@ctu.edu.ph</a></p>
+
+          <div class="staff-links">
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/mak.jpg" alt="Virginia Bismark" class="staff-photo">
+        <div class="staff-info">
+          <h3>Virginia Bismark</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Mechanical Engineering, Cebu Technological University</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>edi sa puso mo</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:virginia.bismark@ctu.edu.ph">virginia.bismark@ctu.edu.ph</a></p>
+
+          <div class="staff-links">
+            <a href="https://www.linkedin.com/in/virginia-bismark-58057b296/" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/klif.jpg" alt="Muhammad Khalifah Macadato" class="staff-photo">
+        <div class="staff-info">
+          <h3>Muhammad Khalifah Macadato</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Master of Science in Mechanical Engineering, Mindanao State University - Iligan Institute of Technology<br>
+			   Bachelor of Science in Mechanical Engineering, Mindanao State University - Iligan Institute of Technology</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>edi sa puso mo</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:muhammadkhalifah.macadato@ctu.edu.ph">muhammadkhalifah.macadato@ctu.edu.ph</a></p>
+
+          <div class="staff-links">
+            <a href="https://www.linkedin.com/in/mk-macadato/" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/jimee.jpg" alt="Jaime Dominic Panelo" class="staff-photo">
+        <div class="staff-info">
+          <h3>Jaime Dominic Panelo</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Master of Engineering in Mechanical Engineering, Technological Institute of the Philippines<br>
+			   Bachelor of Science in Aeronautical Engineering, FEATI University</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>edi sa puso mo</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:jaimedominic.panelo@ctu.edu.ph">jaimedominic.panelo@ctu.edu.ph</a></p>
+
+          <div class="staff-links">
+            <a href="https://www.linkedin.com/in/jimeepanelo/?originalSubdomain=ph" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+<!--      <div class="person-card staff-card">
+        <img src="img/people/staff1.jpg" alt="Rau Lance Cunanan" class="staff-photo">
+        <div class="staff-info">
+          <h3>staff6 name</h3>
+		  <p><strong>Education:</strong></p>
+			<p>MS in what?, school here<br>
+			   BS in what?, school here</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>write interests here</p>
+		  </p>
+		  <p><strong>Email:</strong>
+
+          <div class="staff-links">
+            <a href="https://scholar.google.com" target="_blank">
+              <img src="img/icons/scholar.svg" class="icon-img" alt="Google Scholar">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+            <a href="https://orcid.org" target="_blank">
+              <img src="img/icons/orcid.svg" class="icon-img" alt="ORCID">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end HMAV staff list -->
+
+    <br>
+
+    <!-- ======= MASS Research Staffs ======= -->
+    <h2>MASS Prototype Research Staffs</h2>
+    <div class="people-grid staff-list">
+
+     <div class="person-card staff-card">
+        <!-- staff photo -->
+        <img src="img/people/andrew.jpg" alt="Andrew Jay Mugot" class="staff-photo">
+        <!-- staff text -->
+        <div class="staff-info">
+          <h3>Andrew Jay Mugot</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Mechanical Engineering, Mindanao State University - Iligan Institute Technology</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>write interests here</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:andrewjay.mugot@ctu.edu.ph">andrewjay.mugot@ctu.edu.ph</a></p>
+          <!-- social icons -->
+          <div class="staff-links">
+            <a href="https://www.linkedin.com/in/ajmugot/" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/edison.jpg" alt="Edison Montes" class="staff-photo">
+        <div class="staff-info">
+          <h3>Edison Montes</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Mechanical Engineering, Mindanao State University - Iligan Institute Technology</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>write interests here</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:edison.montes@ctu.edu.ph">edison.montes@ctu.edu.ph</a></p>
+
+          <div class="staff-links">
+            <a href="https://scholar.google.com/citations?user=RyWIvawAAAAJ&hl=en&oi=ao" target="_blank">
+              <img src="img/icons/scholar.svg" class="icon-img" alt="Google Scholar">
+            </a>
+            <a href="https://www.linkedin.com/in/montesedison/" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+	  
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/alec.jpg" alt="Alecrates Tundag" class="staff-photo">
+        <div class="staff-info">
+          <h3>Alecrates Tundag</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Mechanical Engineering, Cebu Technological University</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>write interests here</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:alecrates.tundag@ctu.edu.ph">alecrates.tundag@ctu.edu.ph</a></p>
+
+        </div>
+      </div>
+	  
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/gab.jpg" alt="Gabriel Valenzuela" class="staff-photo">
+        <div class="staff-info">
+          <h3>Gabriel Valenzuela</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Electronics and Communications Engineering, Mindanao State University - Iligan Institute Technology</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p> 
+			<p>write interests here</p> 
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:gabriel.valenzuela@ctu.edu.ph">gabriel.valenzuela@ctu.edu.ph</a></p>
+
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+      <div class="person-card staff-card">
+        <img src="img/people/rona.jpg" alt="Rona Joymae Cabase" class="staff-photo">
+        <div class="staff-info">
+          <h3>Rona Joymae Cabase</h3>
+		  <p><strong>Education:</strong></p>
+			<p>Bachelor of Science in Mechanical Engineering, Cebu Technological University</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>write interests here</p>
+		  </p>
+		  <p><strong>Email:</strong> <a href="mailto:ronajoymae.cabase@ctu.edu.ph">ronajoymae.cabase@ctu.edu.ph</a></p>
+
+          <div class="staff-links">
+            <a href="https://www.linkedin.com/in/rona-joymae-cabase-b94a7a2b9/" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff placeholder -->
+<!--      <div class="person-card staff-card">
+        <img src="img/people/staff1.jpg" alt="Rau Lance Cunanan" class="staff-photo">
+        <div class="staff-info">
+          <h3>staff6 name</h3>
+		  <p><strong>Education:</strong></p>
+			<p>MS in what?, school here<br>
+			   BS in what?, school here</p>
+		  </p>
+		  <p><strong>Research Interests:</strong></p>
+			<p>write interests here</p>
+		  </p>
+		  <p><strong>Email:</strong>
+
+          <div class="staff-links">
+            <a href="https://scholar.google.com" target="_blank">
+              <img src="img/icons/scholar.svg" class="icon-img" alt="Google Scholar">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="img/icons/linkedin.svg" class="icon-img" alt="LinkedIn">
+            </a>
+            <a href="https://orcid.org" target="_blank">
+              <img src="img/icons/orcid.svg" class="icon-img" alt="ORCID">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end MASS staff list -->
+
+  </div>
+</section>
+
+<!-- ================== FOOTER ==================
+     - Shared across pages
+================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Center for Advanced Vehicles and Energy Systems</p>
+  </div>
+</footer>
+
+<!-- ================== PAGE SCRIPTS ==================
+     - Footer year auto-update
+     - Accordion open/close behavior for Biography and Links
+===================================================== -->
+<script>
+  // keep footer year up to date
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // simple accordion behavior for Biography / Links
+  document.querySelectorAll('.accordion-header').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const panel = btn.nextElementSibling;
+
+      // toggle open/closed on this item
+      panel.classList.toggle('open');
+      btn.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>

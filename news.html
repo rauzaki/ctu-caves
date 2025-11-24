@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News | CTU-CAVES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo"><span>CTU-CAVES</span></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="people.html">People</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html" class="active">News</a>
+      <a href="sponsors.html">Sponsors</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1>News</h1>
+    <p>Add news items, announcements, and achievements here.</p>
+
+    <div class="news-list">
+      <article class="news-item" id="news-1">
+        <h3>Example News Item</h3>
+        <p class="news-meta">January 1, 2025</p>
+        <p>Replace this text with a short description of a real event or announcement.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container"><p>© <span id="year"></span> Center for Advanced Vehicles and Energy Systems</p></div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
